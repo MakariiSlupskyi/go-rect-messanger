@@ -1,0 +1,6 @@
+CREATE TABLE users (
+  id BIGINT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+  username TEXT NOT NULL UNIQUE,
+  displayName TEXT,
+  passwordHash TEXT NOT NULL
+);
